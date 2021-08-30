@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 from numpy.core.records import array
-I = cv2.imread('crayfish2.jpg', cv2.IMREAD_GRAYSCALE)
+I = cv2.imread('train.jpg', cv2.IMREAD_GRAYSCALE)
 
 
 row,col=I.shape
