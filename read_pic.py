@@ -1,9 +1,8 @@
 import numpy as np
 import cv2
 from numpy.core.records import array
-I = cv2.imread(r"F:\ise-xilinx\fpga_project\crayfish.jpg", cv2.IMREAD_GRAYSCALE)
+I = cv2.imread("train.jpg", cv2.IMREAD_GRAYSCALE)
 I = cv2.resize(I, (100,65), interpolation = cv2.INTER_AREA)
-cv2.imwrite("crayfish2.jpg",I)
 
 row,col=I.shape
 cv2.imshow("a",I)
